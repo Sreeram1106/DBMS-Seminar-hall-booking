@@ -1,0 +1,18 @@
+# Look and feel of the Streamlit app: clean white booking site with one teal accent
+
+[client]
+toolbarMode = "minimal"          # hides the Deploy button
+
+[theme]
+base = "light"
+primaryColor = "#0F6E56"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F4F6F8"
+textColor = "#1C2430"
+linkColor = "#0F6E56"
+borderColor = "#E4E7EB"
+showWidgetBorder = true
+baseRadius = "large"
+font = "Inter:https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+headingFont = "Plus Jakarta Sans:https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
+chartCategoricalColors = ["#0F6E56", "#EF9F27", "#378ADD", "#D85A30", "#7F77DD", "#D4537E", "#639922", "#888780"]
