@@ -1,0 +1,9 @@
+streamlit>=1.40
+pandas>=2.0
+altair>=5.0
+mysql-connector-python>=9.0
+
+# NoSQL driver (MySQL Document Store / X DevAPI). Install it separately with:
+#   pip install --no-deps mysqlx-connector-python
+# Without --no-deps it pins protobuf==5.29.4, which downgrades protobuf and
+# breaks TensorFlow. The driver works fine with the newer protobuf.

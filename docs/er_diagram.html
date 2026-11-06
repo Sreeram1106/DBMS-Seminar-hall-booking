@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Seminar Booking ER Diagram</title>
+<style>
+  body { margin: 0; padding: 24px; background: #fff; color: #222; font-family: Arial, Helvetica, sans-serif; }
+  h1 { font-size: 24px; margin: 0 0 4px; }
+  h2 { font-size: 19px; margin: 32px 0 8px; border-bottom: 2px solid #ddd; padding-bottom: 4px; }
+  p.note { color: #555; margin: 4px 0 12px; font-size: 14px; }
+  .er svg { width: 100%; height: auto; max-width: 2000px; border: 1px solid #ccc; }
+  .legend { display: flex; flex-wrap: wrap; gap: 18px; font-size: 14px; margin: 10px 0; }
+  .legend span { display: inline-flex; align-items: center; gap: 6px; }
+  .rel { margin: 14px 0; overflow-x: auto; }
+  .rname { font-weight: bold; margin-bottom: 4px; }
+  table { border-collapse: collapse; }
+  td { border: 1.5px solid #222; padding: 6px 10px; font-size: 14px; white-space: nowrap; }
+  td.pk { text-decoration: underline; font-weight: bold; background: #e3f2fd; }
+  td.fk { font-style: italic; background: #fff8e1; }
+  ul.fks { margin: 4px 0 0; padding-left: 20px; font-size: 13px; color: #444; }
+  span.new { font-weight: normal; font-size: 12px; background: #e8f5e9; border: 1px solid #8bc34a; padding: 1px 6px; margin-left: 6px; }
+  @media print { body { padding: 0; } h2 { page-break-before: always; } }
+</style>
+</head>
+<body>
+<h1>University Seminar Hall Booking System</h1>
+<p class="note">ER diagram in Chen notation (Elmasri &amp; Navathe style). Use Ctrl+P to print or save as PDF.</p>
+
+<h2>1. ER Diagram</h2>
+<div class="legend">
+  <span><svg width="44" height="22"><rect x="1" y="1" width="42" height="20" fill="#e3f2fd" stroke="#222"/></svg> Entity</span>
+  <span><svg width="44" height="24"><polygon points="22,1 43,12 22,23 1,12" fill="#fff8e1" stroke="#222"/></svg> Relationship</span>
+  <span><svg width="50" height="22"><ellipse cx="25" cy="11" rx="23" ry="9" fill="#fff" stroke="#222"/></svg> Attribute</span>
+  <span><u>underlined</u> = key attribute</span>
+  <span><svg width="44" height="12"><line x1="0" y1="6" x2="44" y2="6" stroke="#222" stroke-width="6"/><line x1="0" y1="6" x2="44" y2="6" stroke="#fff" stroke-width="2"/></svg> total participation</span>
+  <span><svg width="44" height="12"><line x1="0" y1="6" x2="44" y2="6" stroke="#222" stroke-width="1.5"/></svg> partial participation</span>
+  <span><b style="color:#b00020">1 / N</b> = cardinality ratio</span>
+  <span><svg width="44" height="22"><rect x="1" y="1" width="42" height="20" fill="#e8f5e9" stroke="#222"/></svg> Green entities = added for our college's rules</span>
+</div>
+<div class="er">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 1380" width="2000" height="1380" font-family="Arial, Helvetica, sans-serif">
+<rect width="2000" height="1380" fill="#fff"/>
+<line x1="800" y1="70" x2="1000" y2="110" stroke="#222" stroke-width="1.5"/>
+<line x1="1000" y1="32" x2="1000" y2="110" stroke="#222" stroke-width="1.5"/>
+<line x1="1200" y1="70" x2="1000" y2="110" stroke="#222" stroke-width="1.5"/>
+<line x1="790" y1="305" x2="1000" y2="330" stroke="#222" stroke-width="1.5"/>
+<line x1="790" y1="372" x2="1000" y2="330" stroke="#222" stroke-width="1.5"/>
+<line x1="1210" y1="330" x2="1000" y2="330" stroke="#222" stroke-width="1.5"/>
+<line x1="225" y1="190" x2="420" y2="250" stroke="#222" stroke-width="1.5"/>
+<line x1="300" y1="115" x2="420" y2="250" stroke="#222" stroke-width="1.5"/>
+<line x1="470" y1="110" x2="420" y2="250" stroke="#222" stroke-width="1.5"/>
+<line x1="245" y1="320" x2="420" y2="250" stroke="#222" stroke-width="1.5"/>
+<line x1="1780" y1="190" x2="1580" y2="250" stroke="#222" stroke-width="1.5"/>
+<line x1="1700" y1="115" x2="1580" y2="250" stroke="#222" stroke-width="1.5"/>
+<line x1="1545" y1="110" x2="1580" y2="250" stroke="#222" stroke-width="1.5"/>
+<line x1="1800" y1="275" x2="1580" y2="250" stroke="#222" stroke-width="1.5"/>
+<line x1="1760" y1="345" x2="1580" y2="250" stroke="#222" stroke-width="1.5"/>
+<line x1="470" y1="445" x2="660" y2="410" stroke="#222" stroke-width="1.5"/>
+<line x1="520" y1="515" x2="660" y2="410" stroke="#222" stroke-width="1.5"/>
+<line x1="620" y1="575" x2="660" y2="410" stroke="#222" stroke-width="1.5"/>
+<line x1="1150" y1="428" x2="1000" y2="485" stroke="#222" stroke-width="1.5"/>
+<line x1="790" y1="640" x2="1000" y2="640" stroke="#222" stroke-width="1.5"/>
+<line x1="820" y1="470" x2="1000" y2="640" stroke="#222" stroke-width="1.5"/>
+<line x1="715" y1="715" x2="1000" y2="640" stroke="#222" stroke-width="1.5"/>
+<line x1="925" y1="815" x2="1000" y2="640" stroke="#222" stroke-width="1.5"/>
+<line x1="1085" y1="805" x2="1000" y2="640" stroke="#222" stroke-width="1.5"/>
+<line x1="1215" y1="585" x2="1000" y2="640" stroke="#222" stroke-width="1.5"/>
+<line x1="1345" y1="590" x2="1000" y2="640" stroke="#222" stroke-width="1.5"/>
+<line x1="1275" y1="665" x2="1000" y2="640" stroke="#222" stroke-width="1.5"/>
+<line x1="1690" y1="725" x2="1760" y2="820" stroke="#222" stroke-width="1.5"/>
+<line x1="1860" y1="725" x2="1760" y2="820" stroke="#222" stroke-width="1.5"/>
+<line x1="1800" y1="915" x2="1760" y2="820" stroke="#222" stroke-width="1.5"/>
+<line x1="250" y1="1050" x2="480" y2="1120" stroke="#222" stroke-width="1.5"/>
+<line x1="235" y1="1120" x2="480" y2="1120" stroke="#222" stroke-width="1.5"/>
+<line x1="270" y1="1190" x2="480" y2="1120" stroke="#222" stroke-width="1.5"/>
+<line x1="370" y1="1250" x2="480" y2="1120" stroke="#222" stroke-width="1.5"/>
+<line x1="505" y1="1272" x2="480" y2="1120" stroke="#222" stroke-width="1.5"/>
+<line x1="640" y1="1250" x2="480" y2="1120" stroke="#222" stroke-width="1.5"/>
+<line x1="665" y1="1192" x2="480" y2="1120" stroke="#222" stroke-width="1.5"/>
+<line x1="420" y1="1010" x2="480" y2="1120" stroke="#222" stroke-width="1.5"/>
+<line x1="880" y1="1215" x2="1000" y2="1120" stroke="#222" stroke-width="1.5"/>
+<line x1="1000" y1="1270" x2="1000" y2="1120" stroke="#222" stroke-width="1.5"/>
+<line x1="1120" y1="1215" x2="1000" y2="1120" stroke="#222" stroke-width="1.5"/>
+<line x1="1740" y1="1060" x2="1520" y2="1120" stroke="#222" stroke-width="1.5"/>
+<line x1="1780" y1="1130" x2="1520" y2="1120" stroke="#222" stroke-width="1.5"/>
+<line x1="1730" y1="1200" x2="1520" y2="1120" stroke="#222" stroke-width="1.5"/>
+<line x1="1590" y1="1245" x2="1520" y2="1120" stroke="#222" stroke-width="1.5"/>
+<line x1="420" y1="250" x2="700" y2="180" stroke="#222" stroke-width="6"/><line x1="420" y1="250" x2="700" y2="180" stroke="#fff" stroke-width="2"/>
+<line x1="1000" y1="110" x2="700" y2="180" stroke="#222" stroke-width="1.5"/>
+<line x1="1580" y1="250" x2="1300" y2="180" stroke="#222" stroke-width="6"/><line x1="1580" y1="250" x2="1300" y2="180" stroke="#fff" stroke-width="2"/>
+<line x1="1000" y1="110" x2="1300" y2="180" stroke="#222" stroke-width="1.5"/>
+<line x1="1000" y1="330" x2="1000" y2="220" stroke="#222" stroke-width="6"/><line x1="1000" y1="330" x2="1000" y2="220" stroke="#fff" stroke-width="2"/>
+<line x1="1000" y1="110" x2="1000" y2="220" stroke="#222" stroke-width="1.5"/>
+<line x1="1000" y1="330" x2="1000" y2="485" stroke="#222" stroke-width="1.5"/>
+<line x1="1000" y1="640" x2="1000" y2="485" stroke="#222" stroke-width="1.5"/>
+<line x1="420" y1="250" x2="660" y2="410" stroke="#222" stroke-width="1.5"/>
+<line x1="1000" y1="640" x2="660" y2="410" stroke="#222" stroke-width="6"/><line x1="1000" y1="640" x2="660" y2="410" stroke="#fff" stroke-width="2"/>
+<line x1="1580" y1="250" x2="1340" y2="410" stroke="#222" stroke-width="1.5"/>
+<line x1="1000" y1="640" x2="1340" y2="410" stroke="#222" stroke-width="6"/><line x1="1000" y1="640" x2="1340" y2="410" stroke="#fff" stroke-width="2"/>
+<line x1="1000" y1="640" x2="1420" y2="760" stroke="#222" stroke-width="1.5"/>
+<line x1="1760" y1="820" x2="1420" y2="760" stroke="#222" stroke-width="6"/><line x1="1760" y1="820" x2="1420" y2="760" stroke="#fff" stroke-width="2"/>
+<line x1="1000" y1="640" x2="720" y2="900" stroke="#222" stroke-width="6"/><line x1="1000" y1="640" x2="720" y2="900" stroke="#fff" stroke-width="2"/>
+<line x1="480" y1="1120" x2="720" y2="900" stroke="#222" stroke-width="1.5"/>
+<line x1="1000" y1="640" x2="1000" y2="900" stroke="#222" stroke-width="1.5"/>
+<line x1="1000" y1="1120" x2="1000" y2="900" stroke="#222" stroke-width="6"/><line x1="1000" y1="1120" x2="1000" y2="900" stroke="#fff" stroke-width="2"/>
+<line x1="1000" y1="640" x2="1280" y2="900" stroke="#222" stroke-width="6"/><line x1="1000" y1="640" x2="1280" y2="900" stroke="#fff" stroke-width="2"/>
+<line x1="1520" y1="1120" x2="1280" y2="900" stroke="#222" stroke-width="1.5"/>
+<line x1="480" y1="1120" x2="740" y2="1120" stroke="#222" stroke-width="1.5"/>
+<line x1="1000" y1="1120" x2="740" y2="1120" stroke="#222" stroke-width="6"/><line x1="1000" y1="1120" x2="740" y2="1120" stroke="#fff" stroke-width="2"/>
+<line x1="1000" y1="1120" x2="1260" y2="1120" stroke="#222" stroke-width="6"/><line x1="1000" y1="1120" x2="1260" y2="1120" stroke="#fff" stroke-width="2"/>
+<line x1="1520" y1="1120" x2="1260" y2="1120" stroke="#222" stroke-width="1.5"/>
+<ellipse cx="800" cy="70" rx="44" ry="19" fill="#fff" stroke="#222" stroke-width="1.5"/>
+<text x="800" y="70" font-size="13" text-anchor="middle" dominant-baseline="middle">dept_id</text>
+<line x1="776" y1="79" x2="824" y2="79" stroke="#222" stroke-width="1"/>
+<ellipse cx="1000" cy="32" rx="53" ry="19" fill="#fff" stroke="#222" stroke-width="1.5"/>
+<text x="1000" y="32" font-size="13" text-anchor="middle" dominant-baseline="middle">dept_code</text>
+<ellipse cx="1200" cy="70" rx="53" ry="19" fill="#fff" stroke="#222" stroke-width="1.5"/>
+<text x="1200" y="70" font-size="13" text-anchor="middle" dominant-baseline="middle">dept_name</text>
+<ellipse cx="790" cy="305" rx="49" ry="19" fill="#fff" stroke="#222" stroke-width="1.5"/>
+<text x="790" y="305" font-size="13" text-anchor="middle" dominant-baseline="middle">chair_id</text>
+<line x1="763" y1="314" x2="817" y2="314" stroke="#222" stroke-width="1"/>
+<ellipse cx="790" cy="372" rx="44" ry="19" fill="#fff" stroke="#222" stroke-width="1.5"/>
+<text x="790" y="372" font-size="13" text-anchor="middle" dominant-baseline="middle">name</text>
+<ellipse cx="1210" cy="330" rx="44" ry="19" fill="#fff" stroke="#222" stroke-width="1.5"/>
+<text x="1210" y="330" font-size="13" text-anchor="middle" dominant-baseline="middle">email</text>
+<ellipse cx="225" cy="190" rx="58" ry="19" fill="#fff" stroke="#222" stroke-width="1.5"/>
+<text x="225" y="190" font-size="13" text-anchor="middle" dominant-baseline="middle">faculty_id</text>
+<line x1="191" y1="199" x2="259" y2="199" stroke="#222" stroke-width="1"/>
+<ellipse cx="300" cy="115" rx="44" ry="19" fill="#fff" stroke="#222" stroke-width="1.5"/>
+<text x="300" y="115" font-size="13" text-anchor="middle" dominant-baseline="middle">name</text>
+<ellipse cx="470" cy="110" rx="44" ry="19" fill="#fff" stroke="#222" stroke-width="1.5"/>
+<text x="470" y="110" font-size="13" text-anchor="middle" dominant-baseline="middle">email</text>
+<ellipse cx="245" cy="320" rx="63" ry="19" fill="#fff" stroke="#222" stroke-width="1.5"/>
+<text x="245" y="320" font-size="13" text-anchor="middle" dominant-baseline="middle">designation</text>
+<ellipse cx="1780" cy="190" rx="44" ry="19" fill="#fff" stroke="#222" stroke-width="1.5"/>
+<text x="1780" y="190" font-size="13" text-anchor="middle" dominant-baseline="middle">srn</text>
+<line x1="1770" y1="199" x2="1790" y2="199" stroke="#222" stroke-width="1"/>
+<ellipse cx="1700" cy="115" rx="44" ry="19" fill="#fff" stroke="#222" stroke-width="1.5"/>
+<text x="1700" y="115" font-size="13" text-anchor="middle" dominant-baseline="middle">name</text>
+<ellipse cx="1545" cy="110" rx="44" ry="19" fill="#fff" stroke="#222" stroke-width="1.5"/>
+<text x="1545" y="110" font-size="13" text-anchor="middle" dominant-baseline="middle">email</text>
+<ellipse cx="1800" cy="275" rx="49" ry="19" fill="#fff" stroke="#222" stroke-width="1.5"/>
+<text x="1800" y="275" font-size="13" text-anchor="middle" dominant-baseline="middle">semester</text>
+<ellipse cx="1760" cy="345" rx="44" ry="19" fill="#fff" stroke="#222" stroke-width="1.5"/>
+<text x="1760" y="345" font-size="13" text-anchor="middle" dominant-baseline="middle">phone</text>
+<ellipse cx="470" cy="445" rx="76" ry="19" fill="#fff" stroke="#222" stroke-width="1.5"/>
+<text x="470" y="445" font-size="13" text-anchor="middle" dominant-baseline="middle">faculty_status</text>
+<ellipse cx="520" cy="515" rx="81" ry="19" fill="#fff" stroke="#222" stroke-width="1.5"/>
+<text x="520" y="515" font-size="13" text-anchor="middle" dominant-baseline="middle">faculty_remarks</text>
+<ellipse cx="620" cy="575" rx="95" ry="19" fill="#fff" stroke="#222" stroke-width="1.5"/>
+<text x="620" y="575" font-size="13" text-anchor="middle" dominant-baseline="middle">faculty_decided_at</text>
+<ellipse cx="1150" cy="428" rx="63" ry="19" fill="#fff" stroke="#222" stroke-width="1.5"/>
+<text x="1150" y="428" font-size="13" text-anchor="middle" dominant-baseline="middle">reviewed_at</text>
+<ellipse cx="790" cy="640" rx="58" ry="19" fill="#fff" stroke="#222" stroke-width="1.5"/>
+<text x="790" y="640" font-size="13" text-anchor="middle" dominant-baseline="middle">request_id</text>
+<line x1="756" y1="649" x2="824" y2="649" stroke="#222" stroke-width="1"/>
+<ellipse cx="820" cy="470" rx="58" ry="19" fill="#fff" stroke="#222" stroke-width="1.5"/>
+<text x="820" y="470" font-size="13" text-anchor="middle" dominant-baseline="middle">event_name</text>
+<ellipse cx="715" cy="715" rx="95" ry="19" fill="#fff" stroke="#222" stroke-width="1.5"/>
+<text x="715" y="715" font-size="13" text-anchor="middle" dominant-baseline="middle">expected_attendees</text>
+<ellipse cx="925" cy="815" rx="67" ry="19" fill="#fff" stroke="#222" stroke-width="1.5"/>
+<text x="925" y="815" font-size="13" text-anchor="middle" dominant-baseline="middle">requested_at</text>
+<ellipse cx="1085" cy="805" rx="44" ry="19" fill="#fff" stroke="#222" stroke-width="1.5"/>
+<text x="1085" y="805" font-size="13" text-anchor="middle" dominant-baseline="middle">remarks</text>
+<ellipse cx="1215" cy="585" rx="44" ry="19" fill="#fff" stroke="#222" stroke-width="1.5"/>
+<text x="1215" y="585" font-size="13" text-anchor="middle" dominant-baseline="middle">status</text>
+<ellipse cx="1345" cy="590" rx="67" ry="19" fill="#fff" stroke="#222" stroke-width="1.5"/>
+<text x="1345" y="590" font-size="13" text-anchor="middle" dominant-baseline="middle">booking_date</text>
+<ellipse cx="1275" cy="665" rx="58" ry="19" fill="#fff" stroke="#222" stroke-width="1.5"/>
+<text x="1275" y="665" font-size="13" text-anchor="middle" dominant-baseline="middle">event_type</text>
+<ellipse cx="1690" cy="725" rx="58" ry="19" fill="#fff" stroke="#222" stroke-width="1.5"/>
+<text x="1690" y="725" font-size="13" text-anchor="middle" dominant-baseline="middle">release_id</text>
+<line x1="1656" y1="734" x2="1724" y2="734" stroke="#222" stroke-width="1"/>
+<ellipse cx="1860" cy="725" rx="44" ry="19" fill="#fff" stroke="#222" stroke-width="1.5"/>
+<text x="1860" y="725" font-size="13" text-anchor="middle" dominant-baseline="middle">reason</text>
+<ellipse cx="1800" cy="915" rx="49" ry="19" fill="#fff" stroke="#222" stroke-width="1.5"/>
+<text x="1800" y="915" font-size="13" text-anchor="middle" dominant-baseline="middle">freed_at</text>
+<ellipse cx="250" cy="1050" rx="44" ry="19" fill="#fff" stroke="#222" stroke-width="1.5"/>
+<text x="250" y="1050" font-size="13" text-anchor="middle" dominant-baseline="middle">hall_id</text>
+<line x1="226" y1="1059" x2="274" y2="1059" stroke="#222" stroke-width="1"/>
+<ellipse cx="235" cy="1120" rx="53" ry="19" fill="#fff" stroke="#222" stroke-width="1.5"/>
+<text x="235" y="1120" font-size="13" text-anchor="middle" dominant-baseline="middle">hall_name</text>
+<ellipse cx="270" cy="1190" rx="44" ry="19" fill="#fff" stroke="#222" stroke-width="1.5"/>
+<text x="270" y="1190" font-size="13" text-anchor="middle" dominant-baseline="middle">block</text>
+<ellipse cx="370" cy="1250" rx="49" ry="19" fill="#fff" stroke="#222" stroke-width="1.5"/>
+<text x="370" y="1250" font-size="13" text-anchor="middle" dominant-baseline="middle">floor_no</text>
+<ellipse cx="505" cy="1272" rx="49" ry="19" fill="#fff" stroke="#222" stroke-width="1.5"/>
+<text x="505" y="1272" font-size="13" text-anchor="middle" dominant-baseline="middle">capacity</text>
+<ellipse cx="640" cy="1250" rx="72" ry="19" fill="#fff" stroke="#222" stroke-width="1.5"/>
+<text x="640" y="1250" font-size="13" text-anchor="middle" dominant-baseline="middle">has_projector</text>
+<ellipse cx="665" cy="1192" rx="44" ry="19" fill="#fff" stroke="#222" stroke-width="1.5"/>
+<text x="665" y="1192" font-size="13" text-anchor="middle" dominant-baseline="middle">has_ac</text>
+<ellipse cx="420" cy="1010" rx="53" ry="19" fill="#fff" stroke="#222" stroke-width="1.5"/>
+<text x="420" y="1010" font-size="13" text-anchor="middle" dominant-baseline="middle">is_active</text>
+<ellipse cx="880" cy="1215" rx="72" ry="19" fill="#fff" stroke="#222" stroke-width="1.5"/>
+<text x="880" y="1215" font-size="13" text-anchor="middle" dominant-baseline="middle">allocation_id</text>
+<line x1="836" y1="1224" x2="924" y2="1224" stroke="#222" stroke-width="1"/>
+<ellipse cx="1000" cy="1270" rx="67" ry="19" fill="#fff" stroke="#222" stroke-width="1.5"/>
+<text x="1000" y="1270" font-size="13" text-anchor="middle" dominant-baseline="middle">booking_date</text>
+<ellipse cx="1120" cy="1215" rx="67" ry="19" fill="#fff" stroke="#222" stroke-width="1.5"/>
+<text x="1120" y="1215" font-size="13" text-anchor="middle" dominant-baseline="middle">allocated_at</text>
+<ellipse cx="1740" cy="1060" rx="44" ry="19" fill="#fff" stroke="#222" stroke-width="1.5"/>
+<text x="1740" y="1060" font-size="13" text-anchor="middle" dominant-baseline="middle">slot_id</text>
+<line x1="1716" y1="1069" x2="1764" y2="1069" stroke="#222" stroke-width="1"/>
+<ellipse cx="1780" cy="1130" rx="58" ry="19" fill="#fff" stroke="#222" stroke-width="1.5"/>
+<text x="1780" y="1130" font-size="13" text-anchor="middle" dominant-baseline="middle">slot_label</text>
+<ellipse cx="1730" cy="1200" rx="58" ry="19" fill="#fff" stroke="#222" stroke-width="1.5"/>
+<text x="1730" y="1200" font-size="13" text-anchor="middle" dominant-baseline="middle">start_time</text>
+<ellipse cx="1590" cy="1245" rx="49" ry="19" fill="#fff" stroke="#222" stroke-width="1.5"/>
+<text x="1590" y="1245" font-size="13" text-anchor="middle" dominant-baseline="middle">end_time</text>
+<polygon points="700,143 775,180 700,217 625,180" fill="#fff8e1" stroke="#222" stroke-width="1.5"/>
+<text x="700" y="180" font-size="12" font-weight="bold" text-anchor="middle" dominant-baseline="middle">WORKS_IN</text>
+<polygon points="1300,143 1375,180 1300,217 1225,180" fill="#fff8e1" stroke="#222" stroke-width="1.5"/>
+<text x="1300" y="180" font-size="12" font-weight="bold" text-anchor="middle" dominant-baseline="middle">BELONGS_TO</text>
+<polygon points="1000,183 1075,220 1000,257 925,220" fill="#fff8e1" stroke="#222" stroke-width="1.5"/>
+<text x="1000" y="220" font-size="12" font-weight="bold" text-anchor="middle" dominant-baseline="middle">HEADS</text>
+<polygon points="1000,448 1075,485 1000,522 925,485" fill="#fff8e1" stroke="#222" stroke-width="1.5"/>
+<text x="1000" y="485" font-size="12" font-weight="bold" text-anchor="middle" dominant-baseline="middle">REVIEWS</text>
+<polygon points="660,373 735,410 660,447 585,410" fill="#fff8e1" stroke="#222" stroke-width="1.5"/>
+<text x="660" y="410" font-size="12" font-weight="bold" text-anchor="middle" dominant-baseline="middle">EVENT_HEAD</text>
+<polygon points="1340,373 1415,410 1340,447 1265,410" fill="#fff8e1" stroke="#222" stroke-width="1.5"/>
+<text x="1340" y="410" font-size="12" font-weight="bold" text-anchor="middle" dominant-baseline="middle">RAISES</text>
+<polygon points="1420,723 1495,760 1420,797 1345,760" fill="#fff8e1" stroke="#222" stroke-width="1.5"/>
+<text x="1420" y="760" font-size="12" font-weight="bold" text-anchor="middle" dominant-baseline="middle">FREES</text>
+<polygon points="720,863 795,900 720,937 645,900" fill="#fff8e1" stroke="#222" stroke-width="1.5"/>
+<text x="720" y="900" font-size="12" font-weight="bold" text-anchor="middle" dominant-baseline="middle">FOR_HALL</text>
+<polygon points="1000,863 1075,900 1000,937 925,900" fill="#fff8e1" stroke="#222" stroke-width="1.5"/>
+<text x="1000" y="900" font-size="12" font-weight="bold" text-anchor="middle" dominant-baseline="middle">RESULTS_IN</text>
+<polygon points="1280,863 1355,900 1280,937 1205,900" fill="#fff8e1" stroke="#222" stroke-width="1.5"/>
+<text x="1280" y="900" font-size="12" font-weight="bold" text-anchor="middle" dominant-baseline="middle">IN_SLOT</text>
+<polygon points="740,1083 815,1120 740,1157 665,1120" fill="#fff8e1" stroke="#222" stroke-width="1.5"/>
+<text x="740" y="1120" font-size="12" font-weight="bold" text-anchor="middle" dominant-baseline="middle">RESERVES</text>
+<polygon points="1260,1083 1335,1120 1260,1157 1185,1120" fill="#fff8e1" stroke="#222" stroke-width="1.5"/>
+<text x="1260" y="1120" font-size="12" font-weight="bold" text-anchor="middle" dominant-baseline="middle">DURING</text>
+<rect x="905.0" y="85" width="190" height="50" fill="#e3f2fd" stroke="#222" stroke-width="2"/>
+<text x="1000" y="110" font-size="15" font-weight="bold" text-anchor="middle" dominant-baseline="middle">DEPARTMENT</text>
+<rect x="900.0" y="305" width="200" height="50" fill="#e8f5e9" stroke="#222" stroke-width="2"/>
+<text x="1000" y="330" font-size="15" font-weight="bold" text-anchor="middle" dominant-baseline="middle">CHAIRPERSON</text>
+<rect x="335.0" y="225" width="170" height="50" fill="#e3f2fd" stroke="#222" stroke-width="2"/>
+<text x="420" y="250" font-size="15" font-weight="bold" text-anchor="middle" dominant-baseline="middle">FACULTY</text>
+<rect x="1495.0" y="225" width="170" height="50" fill="#e3f2fd" stroke="#222" stroke-width="2"/>
+<text x="1580" y="250" font-size="15" font-weight="bold" text-anchor="middle" dominant-baseline="middle">STUDENT</text>
+<rect x="885.0" y="615" width="230" height="50" fill="#e3f2fd" stroke="#222" stroke-width="2"/>
+<text x="1000" y="640" font-size="15" font-weight="bold" text-anchor="middle" dominant-baseline="middle">BOOKING_REQUEST</text>
+<rect x="1670.0" y="795" width="180" height="50" fill="#e8f5e9" stroke="#222" stroke-width="2"/>
+<text x="1760" y="820" font-size="15" font-weight="bold" text-anchor="middle" dominant-baseline="middle">FREED_SLOT</text>
+<rect x="385.0" y="1095" width="190" height="50" fill="#e3f2fd" stroke="#222" stroke-width="2"/>
+<text x="480" y="1120" font-size="15" font-weight="bold" text-anchor="middle" dominant-baseline="middle">SEMINAR_HALL</text>
+<rect x="910.0" y="1095" width="180" height="50" fill="#e3f2fd" stroke="#222" stroke-width="2"/>
+<text x="1000" y="1120" font-size="15" font-weight="bold" text-anchor="middle" dominant-baseline="middle">ALLOCATION</text>
+<rect x="1435.0" y="1095" width="170" height="50" fill="#e3f2fd" stroke="#222" stroke-width="2"/>
+<text x="1520" y="1120" font-size="15" font-weight="bold" text-anchor="middle" dominant-baseline="middle">TIME_SLOT</text>
+<text x="523" y="236" font-size="15" font-weight="bold" fill="#b00020" text-anchor="middle" dominant-baseline="middle">N</text>
+<text x="887" y="125" font-size="15" font-weight="bold" fill="#b00020" text-anchor="middle" dominant-baseline="middle">1</text>
+<text x="1482" y="214" font-size="15" font-weight="bold" fill="#b00020" text-anchor="middle" dominant-baseline="middle">N</text>
+<text x="1108" y="147" font-size="15" font-weight="bold" fill="#b00020" text-anchor="middle" dominant-baseline="middle">1</text>
+<text x="1011" y="289" font-size="15" font-weight="bold" fill="#b00020" text-anchor="middle" dominant-baseline="middle">1</text>
+<text x="989" y="151" font-size="15" font-weight="bold" fill="#b00020" text-anchor="middle" dominant-baseline="middle">1</text>
+<text x="989" y="371" font-size="15" font-weight="bold" fill="#b00020" text-anchor="middle" dominant-baseline="middle">1</text>
+<text x="1011" y="599" font-size="15" font-weight="bold" fill="#b00020" text-anchor="middle" dominant-baseline="middle">N</text>
+<text x="465" y="293" font-size="15" font-weight="bold" fill="#b00020" text-anchor="middle" dominant-baseline="middle">1</text>
+<text x="956" y="597" font-size="15" font-weight="bold" fill="#b00020" text-anchor="middle" dominant-baseline="middle">N</text>
+<text x="1523" y="275" font-size="15" font-weight="bold" fill="#b00020" text-anchor="middle" dominant-baseline="middle">1</text>
+<text x="1056" y="615" font-size="15" font-weight="bold" fill="#b00020" text-anchor="middle" dominant-baseline="middle">N</text>
+<text x="1100" y="680" font-size="15" font-weight="bold" fill="#b00020" text-anchor="middle" dominant-baseline="middle">1</text>
+<text x="1656" y="791" font-size="15" font-weight="bold" fill="#b00020" text-anchor="middle" dominant-baseline="middle">1</text>
+<text x="954" y="668" font-size="15" font-weight="bold" fill="#b00020" text-anchor="middle" dominant-baseline="middle">N</text>
+<text x="527" y="1092" font-size="15" font-weight="bold" fill="#b00020" text-anchor="middle" dominant-baseline="middle">1</text>
+<text x="989" y="681" font-size="15" font-weight="bold" fill="#b00020" text-anchor="middle" dominant-baseline="middle">1</text>
+<text x="1011" y="1079" font-size="15" font-weight="bold" fill="#b00020" text-anchor="middle" dominant-baseline="middle">1</text>
+<text x="1031" y="684" font-size="15" font-weight="bold" fill="#b00020" text-anchor="middle" dominant-baseline="middle">N</text>
+<text x="1488" y="1076" font-size="15" font-weight="bold" fill="#b00020" text-anchor="middle" dominant-baseline="middle">1</text>
+<text x="591" y="1131" font-size="15" font-weight="bold" fill="#b00020" text-anchor="middle" dominant-baseline="middle">1</text>
+<text x="894" y="1109" font-size="15" font-weight="bold" fill="#b00020" text-anchor="middle" dominant-baseline="middle">N</text>
+<text x="1106" y="1131" font-size="15" font-weight="bold" fill="#b00020" text-anchor="middle" dominant-baseline="middle">N</text>
+<text x="1419" y="1109" font-size="15" font-weight="bold" fill="#b00020" text-anchor="middle" dominant-baseline="middle">1</text>
+<rect x="40" y="1328" width="22" height="22" fill="#e8f5e9" stroke="#222"/>
+<text x="72" y="1340" font-size="14" text-anchor="start" dominant-baseline="middle">Green = added for our college's rules (chairperson approval, freed slots). Ovals on a diamond = attributes of that relationship</text>
+</svg>
+</div>
+
+<h2>2. Relational Schema</h2>
+<p class="note">Primary keys are <u><b>underlined</b></u>, foreign keys are in <i>italics</i>. The list under each table shows which table each foreign key refers to.</p>
+<div class="rel"><div class="rname">DEPARTMENTS</div><table><tr><td class="pk">dept_id</td><td>dept_code</td><td>dept_name</td></tr></table></div><div class="rel"><div class="rname">CHAIRPERSONS <span class="new">new: our college rules</span></div><table><tr><td class="pk">chair_id</td><td>name</td><td>email</td><td class="fk">dept_id</td></tr></table><ul class="fks"><li>dept_id → DEPARTMENTS (UNIQUE: one chairperson per department)</li></ul></div><div class="rel"><div class="rname">STUDENTS</div><table><tr><td class="pk">srn</td><td>name</td><td>email</td><td>phone</td><td>semester</td><td class="fk">dept_id</td></tr></table><ul class="fks"><li>dept_id → DEPARTMENTS</li></ul></div><div class="rel"><div class="rname">FACULTY</div><table><tr><td class="pk">faculty_id</td><td>name</td><td>email</td><td>designation</td><td class="fk">dept_id</td></tr></table><ul class="fks"><li>dept_id → DEPARTMENTS</li></ul></div><div class="rel"><div class="rname">SEMINAR_HALLS</div><table><tr><td class="pk">hall_id</td><td>hall_name</td><td>block</td><td>floor_no</td><td>capacity</td><td>has_projector</td><td>has_ac</td><td>is_active</td></tr></table></div><div class="rel"><div class="rname">TIME_SLOTS</div><table><tr><td class="pk">slot_id</td><td>slot_label</td><td>start_time</td><td>end_time</td></tr></table><ul class="fks"><li>CHECK start_time ≥ 09:00 AND end_time ≤ 16:00</li><li>CHECK end_time − start_time ≤ 2 hours</li><li>30 minute gap between slots (trigger trg_slot_gap_insert / _update)</li></ul></div><div class="rel"><div class="rname">BOOKING_REQUESTS</div><table><tr><td class="pk">request_id</td><td class="fk">srn</td><td class="fk">hall_id</td><td class="fk">slot_id</td><td>booking_date</td><td>event_name</td><td>event_type</td><td>expected_attendees</td><td class="fk">faculty_id</td><td>faculty_status</td><td>faculty_remarks</td><td>faculty_decided_at</td><td>status</td><td>remarks</td><td>requested_at</td><td class="fk">reviewed_by</td><td>reviewed_at</td></tr></table><ul class="fks"><li>srn → STUDENTS</li><li>hall_id → SEMINAR_HALLS</li><li>slot_id → TIME_SLOTS</li><li>faculty_id → FACULTY (the event head, who approves first)</li><li>reviewed_by → CHAIRPERSONS (the final approval; NULL until the chairperson decides)</li></ul></div><div class="rel"><div class="rname">ALLOCATIONS</div><table><tr><td class="pk">allocation_id</td><td class="fk">request_id</td><td class="fk">hall_id</td><td class="fk">slot_id</td><td>booking_date</td><td>allocated_at</td></tr></table><ul class="fks"><li>request_id → BOOKING_REQUESTS (UNIQUE)</li><li>hall_id → SEMINAR_HALLS</li><li>slot_id → TIME_SLOTS</li><li>UNIQUE (hall_id, booking_date, slot_id)</li></ul></div><div class="rel"><div class="rname">FREED_SLOTS <span class="new">new: our college rules</span></div><table><tr><td class="pk">release_id</td><td class="fk">request_id</td><td>reason</td><td>freed_at</td></tr></table><ul class="fks"><li>request_id → BOOKING_REQUESTS (UNIQUE, ON DELETE CASCADE)</li><li>rows are written by trigger trg_free_hall_on_cancel</li></ul></div>
+</body>
+</html>

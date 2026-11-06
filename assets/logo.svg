@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 230 48" width="230" height="48">
+  <rect x="2" y="4" width="40" height="40" rx="11" fill="#0F6E56"/>
+  <path d="M12 20 L22 13 L32 20 Z" fill="#ffffff"/>
+  <rect x="13" y="21" width="18" height="2.5" rx="1" fill="#ffffff"/>
+  <rect x="14.5" y="25" width="3" height="10" rx="1" fill="#ffffff"/>
+  <rect x="20.5" y="25" width="3" height="10" rx="1" fill="#ffffff"/>
+  <rect x="26.5" y="25" width="3" height="10" rx="1" fill="#ffffff"/>
+  <rect x="12" y="35.5" width="20" height="2.5" rx="1" fill="#ffffff"/>
+  <text x="52" y="22" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="15.5" font-weight="800" fill="#1C2430">Seminar Hall</text>
+  <text x="52" y="39" font-family="Inter, Arial, sans-serif" font-size="11.5" font-weight="500" fill="#5F6B7A">PES University · Booking</text>
+</svg>
